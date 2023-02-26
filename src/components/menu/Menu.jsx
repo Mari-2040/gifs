@@ -3,10 +3,16 @@ import { AiFillHome } from "react-icons/ai";
 import { BiExclude } from "react-icons/bi";
 import { MdSubscriptions } from "react-icons/md";
 import MenuItem from "./MenuItem";
+import DivLine from "./DivLine";
+
+
+
 
 const Menu = () => {
   return (
     <div className='menu'>
+      <Header />
+      <HeaderLogo />
       <MenuItem
         icon={<AiFillHome />}
         title='Home'
@@ -19,6 +25,7 @@ const Menu = () => {
         icon={<MdSubscriptions />}
         title='Subscriptions'
       />
+      <DivLine/>
     </div>
   );
 };

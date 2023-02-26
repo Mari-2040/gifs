@@ -3,12 +3,11 @@ import "./menu.css";
 
 const MenuItem = ({ title, icon }) => {
   return (
-    <div className='Container'>
+
       <div className='manu-item'>
-        {icon}
-        {title}
+        <div className ="menu-item-icon">{icon}</div>
+        <p className ="menu-item-title">{title}</p> 
       </div>
-    </div>
   );
 };
 
