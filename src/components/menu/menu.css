@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.Container {
+  margin: 17px;
+}
+.manu-item {
+  font-family: "Montserrat", monospace;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+.line {
+  border-top: 5px solid red;
+}
