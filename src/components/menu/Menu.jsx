@@ -4,9 +4,8 @@ import { BiExclude } from "react-icons/bi";
 import { MdSubscriptions } from "react-icons/md";
 import MenuItem from "./MenuItem";
 import DivLine from "./DivLine";
-
-
-
+import Header from "../header";
+import HeaderLogo from "./header/HederLogo";
 
 const Menu = () => {
   return (
@@ -25,7 +24,7 @@ const Menu = () => {
         icon={<MdSubscriptions />}
         title='Subscriptions'
       />
-      <DivLine/>
+      <DivLine />
     </div>
   );
 };
