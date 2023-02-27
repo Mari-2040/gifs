@@ -1,12 +1,16 @@
 import React from "react";
-import "./menu.css";
-import Header from "../Header/Header";
-import HeaderLogo from "./header/HederLogo";
+import HeaderLogo from "../header/HederLogo";
+import "./header.css";
+import Search from "./Search";
 
-const Header = () => {
+const Header = ({ isMenuOpen, setIsMenuOpen }) => {
   return (
     <div className='header-menu'>
-      <HeaderLogo />
+      <HeaderLogo
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+      />
+      <Search />
     </div>
   );
 };

@@ -1,0 +1,49 @@
+.hamburger-clas {
+  display: flex;
+  padding-left: 10px;
+  margin-right: 40vw;
+  align-items: baseline;
+}
+.manu-item-hamburger-menu {
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.manu-item-hamburger-gif {
+  font-size: 20px;
+  cursor: pointer;
+}
+.hder-input {
+  width: 400px;
+  padding: 8px;
+  border: none;
+}
+.hederInput {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.header-menu {
+  background: #2b9184;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.header-serch {
+  cursor: pointer;
+  background-color: darkgray;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manu-item-hamburger-menu:hover {
+  background-color: rgba(255, 255, 255, 0.751);
+  cursor: pointer;
+}
