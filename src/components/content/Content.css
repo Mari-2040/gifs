@@ -1,0 +1,42 @@
+.content {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.content label {
+  text-align: left;
+  display: block;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.content h3 {
+  font-size: 15px;
+  color: cadetblue;
+  margin-bottom: 30px;
+}
+.content input,
+.content textarea,
+.content select {
+  width: 100%;
+  padding: 5px 5px;
+  margin: 10px 0;
+  border: 2px solid #088970;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.content button {
+  background: #0f2223;
+  color: white;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+}
+.content option {
+  background-color: rgb(37, 82, 66);
+  color: white;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+}

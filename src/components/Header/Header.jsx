@@ -3,14 +3,30 @@ import HeaderLogo from "../header/HederLogo";
 import "./header.css";
 import Search from "./Search";
 
-const Header = ({ isMenuOpen, setIsMenuOpen }) => {
+const Header = ({
+  isMenuOpen,
+  changeMenuOpen,
+  updateText,
+  color,
+  setColor,
+  menuColor,
+  menuSetColor,
+}) => {
   return (
-    <div className='header-menu'>
+    <div
+      className='header-menu'
+      style={{ backgroundColor: color }}
+    >
       <HeaderLogo
         isMenuOpen={isMenuOpen}
-        setIsMenuOpen={setIsMenuOpen}
+        changeMenuOpen={changeMenuOpen}
       />
-      <Search />
+      <Search
+        changeText={updateText}
+        setColor={setColor}
+        menuColor={menuColor}
+        menuSetColor={menuSetColor}
+      />
     </div>
   );
 };

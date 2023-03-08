@@ -1,19 +1,22 @@
 import React from "react";
 import { AiFillHome } from "react-icons/ai";
 import { BiExclude } from "react-icons/bi";
-import { AiOutlineClose } from "react-icons/ai";
 import { MdSubscriptions } from "react-icons/md";
 import MenuItem from "./MenuItem";
 import DivLine from "./DivLine";
 
-const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
+const Menu = ({ isMenuOpen, menuColor, menuSetColor }) => {
   return (
     <div
       className='menu'
-      style={{ maxWidth: isMenuOpen ? "200px" : "50px" }}
+      style={{
+        maxWidth: isMenuOpen ? "200px" : "50px",
+        backgroundColor: menuColor,
+      }}
+      onChange={(e) => menuSetColor(e.target.value)}
     >
       <MenuItem
-        icon={isMenuOpen ? <AiFillHome /> : <AiOutlineClose />}
+        icon={<AiFillHome />}
         title='Home'
       />
       <MenuItem

@@ -42,8 +42,11 @@
   justify-content: center;
   align-items: center;
 }
-
 .manu-item-hamburger-menu:hover {
   background-color: rgba(255, 255, 255, 0.751);
   cursor: pointer;
+}
+.titl {
+  padding-left: 7px;
+  color: white;
 }

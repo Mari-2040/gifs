@@ -2,14 +2,21 @@ import React from "react";
 import "./header.css";
 import { GoSearch } from "react-icons/go";
 
-const Search = () => {
+const Search = ({ changeText, menuColor, menuSetColor }) => {
   return (
     <div className='hederInput'>
-      <input
-        className='hder-input'
-        type='text'
-        placeholder='search'
-      />
+      <form>
+        <input
+          className='hder-input'
+          type='text'
+          placeholder='search'
+          value={menuColor}
+          onChange={(e) => {
+            changeText(e.target.value);
+            menuSetColor(e.target.value);
+          }}
+        />
+      </form>
       <div className='header-serch'>
         <GoSearch />
       </div>
